@@ -92,9 +92,9 @@ for c in range(1, ND + 1):
 rolls_data = pd.DataFrame(st.session_state.dice_rolls, columns=cols)
 
 # Plotting individual dice distribution
-ind_cols = st.columns(ND)
-
 st.subheader("Individual die results distribution")
+
+ind_cols = st.columns(ND)
 
 for i, c in enumerate(ind_cols):
     with c:
