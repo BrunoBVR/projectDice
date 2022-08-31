@@ -52,7 +52,7 @@ with col1:
         st.session_state.count += 1
 
         for i in range(ND):
-            image = Image.open(f"dice_faces_hd/{new_roll[0][i]}.png")
+            image = Image.open(f"st-app/dice_faces_hd/{new_roll[0][i]}.png")
             st.image(image)
 
         # Appending new roll to stack of rolls
